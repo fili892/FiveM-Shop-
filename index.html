@@ -36,6 +36,13 @@
         .paypal-button:hover {
             background-color: #ffb000;
         }
+        .confirmation-message {
+            display: none;
+            background-color: #444;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -47,10 +54,22 @@
         <p>Ottieni un FiveM fresh per solo <strong>0,30€</strong></p>
 
         <!-- Bottone PayPal -->
-        <a href="https://www.paypal.me/FilippoPayPal54/0.30" class="paypal-button" target="_blank">
+        <a href="https://www.paypal.me/FilippoPayPal54/0.30" class="paypal-button" target="_blank" onclick="showConfirmationMessage()">
             Acquista con PayPal
         </a>
+
+        <!-- Messaggio di conferma -->
+        <div class="confirmation-message" id="confirmationMessage">
+            <p>Grazie per l'acquisto! Scrivimi su Discord (fili892) per ricevere il tuo FiveM Fresh.</p>
+        </div>
     </div>
+
+    <script>
+        function showConfirmationMessage() {
+            // Mostra il messaggio di conferma
+            document.getElementById('confirmationMessage').style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
