@@ -36,6 +36,21 @@
         .paypal-button:hover {
             background-color: #ffb000;
         }
+        .rainbow-button {
+            background-color: #0055ff;
+            padding: 15px 30px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .rainbow-button:hover {
+            background-color: #ff7300;
+        }
         .confirmation-message {
             display: none;
             background-color: #444;
@@ -56,7 +71,7 @@
         <p>Ottieni un FiveM fresh per solo <strong>0,30€</strong></p>
 
         <!-- Bottone PayPal -->
-        <a href="https://www.paypal.me/FilippoPayPal54/0.30" class="paypal-button" target="_blank" onclick="showConfirmationMessage()">
+        <a href="https://www.paypal.me/FilippoPayPal54/0.30" class="paypal-button" target="_blank" onclick="showConfirmationMessage('confirmationMessage')">
             Acquista con PayPal
         </a>
 
@@ -66,10 +81,27 @@
         </div>
     </div>
 
+    <div class="container">
+        <!-- Immagine Rainbow Six Siege -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/RainbowSixSiege_Logo.png" alt="Rainbow Six Siege" class="logo">
+        
+        <h1>Acquista Siege/Anygame No Recoil Script | Logitech</h1>
+        <p>Ottieni il tuo script No Recoil per solo <strong>4,99€</strong></p>
+
+        <!-- Bottone PayPal -->
+        <a href="https://www.paypal.me/FilippoPayPal54/4.99" class="rainbow-button" target="_blank" onclick="showConfirmationMessage('confirmationMessageRainbow')">
+            Acquista con PayPal
+        </a>
+
+        <!-- Messaggio di conferma -->
+        <div class="confirmation-message" id="confirmationMessageRainbow">
+            <p>Grazie per l'acquisto! Scrivimi su Discord (fili892) per ricevere il tuo script.</p>
+        </div>
+    </div>
+
     <script>
-        function showConfirmationMessage() {
-            // Mostra il messaggio di conferma
-            document.getElementById('confirmationMessage').style.display = 'block';
+        function showConfirmationMessage(id) {
+            document.getElementById(id).style.display = 'block';
         }
     </script>
 
