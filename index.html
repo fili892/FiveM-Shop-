@@ -19,7 +19,7 @@
             margin: 20px;
         }
         .rainbow-image {
-            width: 60%;
+            width: 40%; /* Ridotta al 40% */
             border-radius: 10px;
             margin: 20px 0;
         }
@@ -37,16 +37,16 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            transition: background-color 0.3s; /* Effetto transizione */
+            transition: background-color 0.3s;
         }
         .paypal-button:hover {
-            background-color: #ffd700; /* Oro brillante */
+            background-color: #ffd700;
         }
         .rainbow-title {
-            color: #00c3ff; /* Azzurro chiaro */
+            color: #00c3ff;
         }
         .rainbow-button {
-            background-color: #003366; /* Blu scuro */
+            background-color: #003366;
             padding: 15px 30px;
             border: none;
             color: white;
@@ -56,10 +56,10 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            transition: background-color 0.3s; /* Effetto transizione */
+            transition: background-color 0.3s;
         }
         .rainbow-button:hover {
-            background-color: #6699cc; /* Grigio-azzurro chiaro */
+            background-color: #6699cc;
         }
         .confirmation-message {
             display: none;
@@ -73,37 +73,31 @@
 <body>
 
     <div class="container">
-        <!-- Immagini con i nuovi link -->
         <img src="https://logos-world.net/wp-content/uploads/2021/03/FiveM-Logo.png" alt="FiveM" class="logo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Rockstar_logo_for_tweets.png" alt="Rockstar Games" class="logo">
         
         <h1>Acquista FiveM Fresh</h1>
         <p>Ottieni un FiveM fresh per solo <strong>0,30€</strong></p>
 
-        <!-- Bottone PayPal -->
         <a href="https://www.paypal.me/FilippoPayPal54/0.30" class="paypal-button" target="_blank" onclick="showConfirmationMessage('confirmationMessage')">
             Acquista con PayPal
         </a>
 
-        <!-- Messaggio di conferma -->
         <div class="confirmation-message" id="confirmationMessage">
             <p>Grazie per l'acquisto! Scrivimi su Discord (fili892) per ricevere il tuo FiveM Fresh.</p>
         </div>
     </div>
 
     <div class="container">
-        <!-- Immagine Rainbow Six Siege -->
         <img src="https://eip.gg/wp-content/uploads/2020/01/839399914_preview_R6Siege_Wallpapers_KA_2560x1440.jpg" alt="Rainbow Six Siege" class="rainbow-image">
         
         <h1 class="rainbow-title">Acquista Siege/Anygame No Recoil Script | Logitech</h1>
         <p>Ottieni il tuo script No Recoil per solo <strong>4,99€</strong></p>
 
-        <!-- Bottone PayPal -->
         <a href="https://www.paypal.me/FilippoPayPal54/4.99" class="rainbow-button" target="_blank" onclick="showConfirmationMessage('confirmationMessageRainbow')">
             Acquista con PayPal
         </a>
 
-        <!-- Messaggio di conferma -->
         <div class="confirmation-message" id="confirmationMessageRainbow">
             <p>Grazie per l'acquisto! Scrivimi su Discord (fili892) per ricevere il tuo script.</p>
         </div>
